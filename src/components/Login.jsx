@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../pages/Auth";
 
 const Login = () => {
-  const [userOption, setUserOption] = useContext(UserContext);
+  const [setUserOption] = useContext(UserContext);
   return (
     <div className="login_container">
       <div className="text-center">

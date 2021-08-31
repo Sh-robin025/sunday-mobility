@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../pages/Auth";
 
 const Register = () => {
-  const [userOption, setUserOption] = useContext(UserContext);
+  const [setUserOption] = useContext(UserContext);
   return (
     <div className="register_container">
       <div className="text-center">
@@ -14,7 +14,7 @@ const Register = () => {
       </div>
       <Form className="mt-3">
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="name" placeholder="Name" />
+          <Form.Control type="text" placeholder="Name" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">

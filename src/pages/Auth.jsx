@@ -1,6 +1,5 @@
 import React, { createContext, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import { Route, Switch } from "react-router";
 import ocenImg from "../assets/images/sean-oulashin.jpg";
 import Login from "../components/Login";
 import Register from "../components/Register";
@@ -10,7 +9,7 @@ export const UserContext = createContext();
 const Auth = () => {
   const [userOption, setUserOption] = useState("login");
   return (
-    <UserContext.Provider value={[userOption, setUserOption]}>
+    <UserContext.Provider value={[setUserOption]}>
       <main className="auth_container container d-flex align-items-center">
         <Row className="align-items-center">
           <Col md={6}>
