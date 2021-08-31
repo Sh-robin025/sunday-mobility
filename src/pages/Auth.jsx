@@ -10,7 +10,7 @@ const Auth = () => {
   const [userOption, setUserOption] = useState("login");
   return (
     <UserContext.Provider value={[setUserOption]}>
-      <main className="auth_container container d-flex align-items-center">
+      <main className="auth_container container-fluid d-flex align-items-center">
         <Row className="align-items-center">
           <Col md={6}>
             <Image src={ocenImg} alt="" fluid />

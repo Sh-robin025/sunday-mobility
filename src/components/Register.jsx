@@ -18,8 +18,8 @@ const Register = () => {
   return (
     <div className="register_container">
       <div className="text-center">
-        <h5>Welcome Back!</h5>
-        <p>Please log in to your account</p>
+        <h5>Welcome!</h5>
+        <p>Please Register as a new user</p>
       </div>
       <Form className="mt-3" onSubmit={handleSubmit(handleAddUser)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
