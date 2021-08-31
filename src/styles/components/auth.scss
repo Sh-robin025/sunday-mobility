@@ -1,0 +1,25 @@
+.auth_container {
+  height: 100vh;
+  .login_container {
+    form {
+      width: 60%;
+      margin: 0 auto;
+      .form-control {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $primary;
+        &:focus {
+          border: 1px solid $primary;
+          box-shadow: none;
+        }
+      }
+      button {
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        color: $light;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
