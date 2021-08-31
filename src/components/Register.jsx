@@ -23,11 +23,24 @@ const Register = () => {
       </div>
       <Form className="mt-3" onSubmit={handleSubmit(handleAddUser)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="text" placeholder="Name" {...register("name")} required />
+          <Form.Control
+            type="text"
+            placeholder="Name"
+            {...register("name")}
+            pattern="[a-zA-Z\s]+"
+            required
+          />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="number" placeholder="Number" {...register("number")} required />
+        <Form.Group className="mb-3">
+          <Form.Control
+            // type="number"
+            placeholder="Number"
+            {...register("number")}
+            pattern="^[0-9]{10}$"
+            maxLength="10"
+            required
+          />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -35,7 +48,13 @@ const Register = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="password" placeholder="Password" {...register("password")} required />
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            {...register("password")}
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+            required
+          />
         </Form.Group>
         <div className="mb-4 d-flex justify-content-between">
           <Form.Group controlId="formBasicCheckbox">

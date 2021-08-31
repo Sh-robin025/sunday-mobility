@@ -26,11 +26,17 @@ const Login = () => {
       </div>
       <Form className="mt-3" onSubmit={handleSubmit(handleLogin)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="email" placeholder="Username" {...register("email")} required />
+          <Form.Control type="email" placeholder="Email" {...register("email")} required />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="password" placeholder="Password" {...register("password")} required />
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            {...register("password")}
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+            required
+          />
         </Form.Group>
         <div className="mb-4 d-flex justify-content-between">
           <Form.Group controlId="formBasicCheckbox">
