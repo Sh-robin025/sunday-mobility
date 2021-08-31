@@ -14,6 +14,14 @@ const Register = () => {
       </div>
       <Form className="mt-3">
         <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Control type="name" placeholder="Name" />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Control type="number" placeholder="number" />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control type="email" placeholder="Username" />
         </Form.Group>
 
