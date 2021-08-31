@@ -1,6 +1,7 @@
 .auth_container {
   height: 100vh;
-  .login_container {
+  .login_container,
+  .register_container {
     form {
       width: 60%;
       margin: 0 auto;
